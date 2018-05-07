@@ -1,0 +1,263 @@
+.header {
+
+background-color: powderblue;
+padding: 20px;
+text-align: center;
+}
+
+
+
+img{
+max-width: 100%
+height: auto;
+
+
+}
+
+
+
+h1{
+
+text-align: center;
+padding: 10px;
+background-color: grey;
+
+
+
+}
+
+
+h2{
+
+text-align: left;
+color: grey;
+
+
+}
+
+
+
+
+/*navigation bar style*/
+
+/*nav links*/ /*top nav*/
+/*float:left; /*where text or image is placed*/
+/*display: block;
+color: black;
+text-align: center;
+padding: 18px 16px;
+/*text-decoration:underline;*/
+/*position: fixed;*/
+
+}
+
+.topnav{
+overflow: hidden;
+background-color: grey;
+
+
+}
+
+.topnav a:hover{
+background color: red;
+color: blue;
+}
+
+/*create colums */
+
+.column{
+float: left;
+width: 33%;
+padding: 19px;
+
+}
+
+
+/*space for the colums for each*/
+.row:after
+
+{
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+@media (max-width: 400px) {
+	.column{
+		width: 100%
+	}
+
+}
+
+
+/* Animation for Homepage */
+
+
+body { 
+  font-family: 'Open Sans', 'sans-serif';
+  color: #black;
+  /*background: #222;*/
+  overflow: hidden;
+  font-size: 400%;
+  white-space: nowrap;
+
+}
+
+.item-1, .item-2, .item-3 {
+	position: center;
+  display: block;
+	top: 2em;
+  
+  width: 60%;
+  
+  font-size: 2em;
+
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	text-align: center;
+}
+
+.item-1{
+	animation-name: animation-1;
+}
+
+.item-2{
+	animation-name: animation-2;
+}
+
+.item-3{
+	animation-name: animation-3;
+}
+
+@keyframes animation-1 {
+
+	1%, 8.3% { left: -100%; opacity: 0; }
+
+
+  8.3%,25% { left: 25%; opacity: 1; }
+
+
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes animation-2 {
+	0%, 33% { right: -100%; opacity: 0; }
+
+  41%, 58% { right: 25%; opacity: 1; }
+
+  66%, 100% { right: 110%; opacity: 0; }
+}
+
+@keyframes animation-3 {
+	0%, 66% { left: -100%; opacity: 0; }
+
+
+  74%, 91% { left: 25%; opacity: 1; }
+
+
+  100% { left: 110%; opacity: 0; }
+
+}
+
+
+/* Slideshow */
+
+
+
+
+.HomePage_Animation > figure {
+
+  animation: imageAnimation 30s linear infinite 0s;
+
+  backface-visibility: hidden;
+
+  background-size: cover;
+
+  background-position: center center;
+
+  color: transparent;
+
+  height: 100%;
+
+  left: 0px;
+
+  opacity: 0;
+
+  position: absolute;
+
+  top: 0px;
+
+  width: 100%;
+
+  z-index: 0;
+
+}
+
+.HomePage_Animation > figure:nth-child(1) { background-image: url('Homepage_Photo 1.png'); }
+
+
+.HomePage_Animation > figure:nth-child(2) {
+
+  animation-delay: 6s;
+
+  background-image: url('Homepage_Photo 2.png');
+
+}
+
+
+.HomePage_Animation > figure:nth-child(3) {
+
+  animation-delay: 6s;
+
+  background-image: url('Homepage_Photo 3.png');
+
+
+}
+
+
+.HomePage_Animation > figure:nth-child(4) {
+
+  animation-delay: 10s;
+
+  background-image: url('Homepage_Photo 4.png');
+
+}
+
+
+	@keyframes
+
+imageAnimation {  0% {
+
+ animation-timing-function: ease-in;
+
+ opacity: 0;
+
+}
+
+ 10% {
+
+ animation-timing-function: ease-out;
+
+ opacity: 1;
+
+}
+
+ 27% {
+
+ opacity: 1
+
+}
+
+ 25% {
+
+ opacity: 0
+
+}
+
+ 100% {
+
+ opacity: 0
+
+}
+}
