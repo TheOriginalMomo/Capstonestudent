@@ -109,6 +109,7 @@ $sql = "INSERT INTO `thecomments` (First_Name, Last_Name, Email_Address, User_Co
 
 <br>
 <br>
+<br>
 
 <div class="container">
     
@@ -135,10 +136,10 @@ $sql = "INSERT INTO `thecomments` (First_Name, Last_Name, Email_Address, User_Co
 
 <Label for="Email_Address">Email Address</Label>
 <input type="text" id="Email_Address" name="Email_Address">
-
+<div class="form-group">
 <label for="User_Comments">Comments</label>
-<textarea id="User_Comments" name="User_Comments" style="height: 400px";></textarea>
-
+<textarea id="User_Comments" class="form-control" rows="400" cols="170" name="User_Comments" style="height: 400px";></textarea>
+</div>
 
 <button class="btn btn-lg btn-primary btn-block" type=" submit">Submit</button>
 </form>
