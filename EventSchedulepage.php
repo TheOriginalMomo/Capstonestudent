@@ -91,10 +91,10 @@ $sql = "INSERT INTO `events` (First_Name, Last_Name, Email_Address, Username, Ev
 
 
 
-<link rel="Stylesheet" type="text/css" href="color_scheme4.css">
+<link rel="Stylesheet" type="text/css" href="color_scheme3.css">
 </head>
 <body>
-<body>
+
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Logo and responsive toggle -->
@@ -149,9 +149,10 @@ $sql = "INSERT INTO `events` (First_Name, Last_Name, Email_Address, Username, Ev
 
 <br>
 <br>
-<br>		    
-		    
-<br></ul>
+<br>
+<br>
+
+</ul>
 
  <form class="form" method="post" id="eventform">
   <label for="First_Name">First Name</label>
@@ -168,11 +169,14 @@ $sql = "INSERT INTO `events` (First_Name, Last_Name, Email_Address, Username, Ev
 <Label for="Username">Username</Label>
 <input type="text" id="Username" name="Username">
 
+<br>
+<div class="form-group">
+<label for="User_Comments">Comments</label>
+<textarea id="eventform" class="form-control" name="User_Comments" style="height: 400px";></textarea>
+</div>
 
-
-
-
-<select name="Eventlist" form="eventform">
+<div class="form-group">
+<select name="Eventlist" form="eventform" class="form-control" >
   <option value" name="Event" value="Birthday" checked> Birthday</option>
   <option value" name="Event" value="Wedding "> Wedding</option>
   <option value" name="Event" value="Seminar"> Seminar</option>
@@ -180,10 +184,7 @@ $sql = "INSERT INTO `events` (First_Name, Last_Name, Email_Address, Username, Ev
   <option value" name="Event" value="Business Package "> Business</option>
   <option value" name="Event" value="Meeting"> Meeting</option>
 </select>
-<label for="User_Comments">Comments</label>
-<textarea id="User_Comments" name="User_Comments" style="height: 400px";></textarea>
-
-
+</div>
 </form> 
 
 <button class="btn btn-lg btn-primary btn-block" type=" submit">Register</button>
