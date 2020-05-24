@@ -40,7 +40,6 @@ if (!$conn) {
 }
 echo "Connected successfully";
 
-
 ?>
 
 </body>
