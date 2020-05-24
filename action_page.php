@@ -6,7 +6,6 @@
 <body>
 
 
-
 <?php
 //$dbhost='localhost';
 //$ this is where databse informatio would go
